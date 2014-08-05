@@ -1,0 +1,164 @@
+$primaryBackground: #F1F1F1;
+$primaryCTA: #5AB5EA;
+$borderColor: #D5D5D5;
+
+body {
+	background: $primaryBackground;
+}
+
+.wrapper {
+	box-sizing: border-box;
+	margin: 20px auto 0 auto;
+	max-width: 800px;
+	padding: 0 10px;
+	position: relative;
+}
+
+.post-tools {
+	border:1px solid $borderColor;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 10px;
+
+	&:hover {
+		box-shadow: inset 0 0 0 3px darken($borderColor, 75%);
+	}
+
+	.filter{
+		float: left;
+	}
+
+	.sort {
+		float: right;
+
+		p, ul {
+			float: left;
+			margin: 0;
+		}
+
+		p {
+			margin-right: 10px;
+		}
+
+		a {
+			font-size: 1.4em;
+			line-height: 1.4em;
+			margin-right: 5px;
+			text-decoration: none;
+
+			&:hover, :focus, :active {
+				text-decoration: underline;
+			}
+
+			&.active {
+				text-decoration: underline;
+			}
+		}
+	}	
+}
+
+.flickr-post {
+	border-bottom:1px solid $borderColor;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-bottom: 10px;
+	width: 100%;
+
+	.img-container {
+		float: left;
+		text-align: right;
+		width: 240px;
+	}
+
+	.info-container {
+		box-sizing: border-box;
+		float: left;
+		overflow: hidden;
+		padding: 10px;
+	}
+}
+
+.publish-details.show-handheld {
+	display: none;
+}
+
+ul {
+	overflow: hidden;
+}
+
+li { 
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 10px;
+
+	&:last-child { 
+		margin-right: 0; 
+	}
+}
+
+.btn {
+	background: $primaryCTA;
+	color: #fff;
+	font-size: 1.4em;
+	padding: 10px;
+	text-decoration: none;
+
+	&:hover {
+		background: lighten($primaryCTA, 10%);
+	}
+
+}
+
+.flickr-detailed {
+	
+	h2 {
+		float: left;
+	}
+	.back-btn {
+		cursor: pointer;
+		float: right;
+	}
+	ul {
+		clear: both;
+	}
+
+	.post-details {
+		margin-bottom: 10px;
+
+		li {
+			margin-bottom: 0;
+		}
+
+		li + li {
+
+			&:before {
+				content: "|";
+				padding-right: 10px;
+			}
+		}
+	}
+
+}
+
+.photo-post {
+	border-top: 1px solid $borderColor;
+	border-bottom: 1px solid $borderColor;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 10px 0;
+
+	img {
+		float: left;
+		margin-right: 20px;
+	}
+	
+	/*hack*/
+	p:first-child {
+		display: none;
+	}
+
+}
+
+.g-plus-container {
+	float: right;
+}

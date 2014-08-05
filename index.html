@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="flickrApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Flickr App</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:700|Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/flickr-assets/css/screen.css"/>
+	<meta name="viewport" content="initial-scale=1.0">
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<h1>Flickr Public Feed</h1>
+
+		<div ng-view class="page {{ pageClass }}"></div>
+	
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular-route.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular-sanitize.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular-animate.min.js"></script>
+	<script src="/flickr-assets/js/appendAround.js"></script>
+	<script src="/flickr-assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<div class="flickr-detailed">
+	
+	<a href="{{ post.link }}"><h2>{{ post.title }}</h2></a>
+	<a href class="btn back-btn" back-button>Back</a>
+
+	<ul class="post-details">
+		<li><a ng-href="https://www.flickr.com/photos/{{post.author_id}}">{{ post.author | showAuthorName }}</a></li>
+		<li>Published: {{ post.published | date: 'longDate' }}</li>
+	</ul>
+
+	<div class="photo-post" ng-bind-html="post.description"></div>
+
+	<div class="g-plus-container">
+		<div class="g-plusone" data-size="tall" data-annotation="none" data-href="{{ post.link }}"></div>
+	</div>
+
+	<h3>Tags:</h3>
+	<ul>
+		<li ng-repeat="tag in tags"><a ng-href="http://www.flickr.com/photos/tags/{{ tag }}/">{{ tag }}</a></li>
+	</ul>
+
+</div>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>

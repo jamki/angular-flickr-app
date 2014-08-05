@@ -1,0 +1,49 @@
+$primaryColour: #333;
+$secondaryColour: #666;
+/*$highlightColour:*/
+
+/* google fonts - load */
+body {
+	font-size: 10px;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: $primaryColour;
+}
+h1 {
+	font-size: 2.8em;
+	margin-bottom: 20px;	
+}
+h2, h3 { 
+	margin-bottom: 10px;	
+}
+h2 {
+	font-size: 2.2em;
+}
+h3 {
+	font-size: 2em;
+}
+a {
+	font-family: 'Open Sans', sans-serif;
+	color: $secondaryColour;
+	-webkit-transition: color 0.2s ease-in;
+	-moz-transition: color 0.2s ease-in;
+	-ms-transition: color 0.2s ease-in;
+	-o-transition: color 0.2s ease-in;
+	transition: color 0.2s ease-in;
+	&:hover {
+		color: darken($secondaryColour, 100%);
+	}	
+
+}
+p, li, label, input {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: $secondaryColour;
+	font-size: 1.4em;
+	line-height: 1.4em;
+}
+p {
+	margin-bottom: 10px;	
+}

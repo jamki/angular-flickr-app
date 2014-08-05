@@ -1,0 +1,56 @@
+$tablet: 800px;
+$mobile: 480px;
+
+/* tablet */
+@media screen and (max-width: $tablet) {
+	
+	.publish-details.show-desktop {
+		display: none;
+	}
+	.publish-details.show-handheld {
+		display: block;
+	}
+
+}
+
+/* mobile */
+@media screen and (max-width: $mobile) {
+
+	.flickr-post {
+		text-align: center;
+
+		.img-container, .info-container {
+			float: none;
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.flickr-detailed {
+
+		h2 {
+			float: none;
+			text-align: center;
+		}
+
+		.back-btn {
+			position: absolute;
+			top: 0;
+			right: 10px;
+		}
+
+		.post-details {
+			text-align: center;
+		}
+
+	}
+
+	.photo-post {
+			text-align: center;
+		img {
+			float: none;
+			margin: 0;
+		}
+	}
+
+}
