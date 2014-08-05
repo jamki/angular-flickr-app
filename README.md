@@ -7,8 +7,8 @@ Two page app using the public JSON API feed to display photos based on tag (defi
 **jQuery Used:**
 - jQuery Library
 - AppendAround - https://github.com/filamentgroup/AppendAround
-
-**Angular Modules used:**
-- ngRoute
-- ngSanitize
-- ngAnimate
+- Angular
+-- ngRoute
+-- ngSanitize
+-- ngAnimate
+- Built with Sass
