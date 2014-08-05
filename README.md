@@ -12,5 +12,3 @@ Two page app using the public JSON API feed to display photos based on tag (defi
 - ngRoute
 - ngSanitize
 - ngAnimate
-
-    Add a indent and this will end up as code
